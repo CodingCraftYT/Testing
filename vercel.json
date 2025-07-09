@@ -9,10 +9,5 @@
   "routes": [
     { "src": "/api/(.*)", "dest": "/api/index.py" },
     { "src": "/(.*)", "dest": "/client/$1" }
-  ],
-  "functions": {
-    "api/index.py": {
-      "maxDuration": 10
-    }
-  }
+  ]
 }
