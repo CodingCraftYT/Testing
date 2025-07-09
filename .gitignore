@@ -9,7 +9,7 @@ __pycache__/
 .vercel
 
 # Build output from React
-client/build/
+#client/build/
 
 # Virtualenvs (if any)
 api/env/
