@@ -4,7 +4,7 @@ function App() {
   const [message, setMessage] = useState("Loading...");
 
   useEffect(() => {
-    fetch("/api")
+    fetch("/")
       .then(res => res.json())
       .then(data => setMessage(data.message))
       .catch(() => setMessage("⚠️ Failed to fetch backend"));
