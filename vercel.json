@@ -10,20 +10,15 @@
       "use": "@vercel/python"
     }
   ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/index.py"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/client/build/index.html"
-    }
-  ],
   "rewrites": [
     {
       "source": "/api/(.*)",
       "destination": "/api/index.py"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/client/$1"
     }
-  ]
+  ],
+  "outputDirectory": "client/build"
 }
