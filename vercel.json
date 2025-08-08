@@ -17,7 +17,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/client/$1"
+      "dest": "/client/build/index.html"
     }
   ],
   "rewrites": [
@@ -25,6 +25,5 @@
       "source": "/api/(.*)",
       "destination": "/api/index.py"
     }
-  ],
-  "outputDirectory": "client/build"
+  ]
 }
